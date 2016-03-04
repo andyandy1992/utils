@@ -1,4 +1,4 @@
-## Main
+## Typical Usage
 ```rsync -av --progress --human-readable --whole-file source/ target/```
 - **Bandwidth (but no CPU) issues: Remove ```--whole-files```, add ```--compress``` (to compress file data during the transfer).
 - **Remember** ```source/``` copies the contents of the directory source; just ```source``` copies the actual directory.
