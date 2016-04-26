@@ -1,2 +1,2 @@
 - **Clear all RStudio**: `rm(list=ls());cat("\014");dev.off(dev.list()["RStudioGD"])`
-
+- `ML_methods.R` List of useful machine learning functions.
