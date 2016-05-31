@@ -1,4 +1,4 @@
-source("clean.R")
+source("clean_all.R")
 
 
 add_max_label <- function(df){
@@ -16,14 +16,7 @@ add_max_label <- function(df){
   return(df_return)
 }
 
-read_csv <- function(path, col_idx=1){
-  # Read csv, using a column for row numbers.
-  # 'col_idx' specifies the column index to use for naming the rows.
-
-  df = read.csv(path, stringsAsFactors = FALSE)
-  rownames(df) <- df[,1]
-  return(df)
-}
+source("helpers.R")
 
 compare_label_two_df<- function(df1, df2){
   # Creates new dataframe: (df1_)row_max, (df1_)max_labels, df2_max_labels, df2_row_max
