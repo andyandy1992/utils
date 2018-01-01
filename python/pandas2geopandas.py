@@ -1,9 +1,8 @@
 # Source: https://gist.github.com/nygeog/2731427a74ed66ca0e420eaa7bcd0d2b
 
-import pandas as pd
-from geopandas import GeoDataFrame
-from shapely.geometry import Point
-import fiona
+import pandas as pd                 # version 0.21.1
+from geopandas import GeoDataFrame  # version 0.3.0
+from shapely.geometry import Point  # version 1.6.3
 
 df = pd.read_csv('data.csv')
 
